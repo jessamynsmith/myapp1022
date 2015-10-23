@@ -55,7 +55,7 @@ angular.module('starter.controllers', [])
 	$http.get('https://www.gudhome.com/mobile/sql/sql-R-playlists.php').success(function(data){
 		alert('a');
 		console.log(data);
-		//$scope.playlists = data;
+		$scope.playlists = data;
 	}).error(function(data){
 			alert(data);
 		});
